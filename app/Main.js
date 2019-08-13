@@ -1,6 +1,7 @@
 import { h, Component } from "preact";
 import { Entity, Scene } from "aframe-react";
 import MenuContainer from './containers/MenuContainer'
+import SoundPlayer from "./components/SoundPlayer";
 
 
 export default class Main extends Component {
@@ -11,7 +12,7 @@ export default class Main extends Component {
       background: "img/sky.jpg",
       immersive: false,
       environments: [],
-      sfx: 'menumusic.wav'
+      sfx: 'menumusic.mp3'
     };
   }
 
@@ -64,7 +65,7 @@ export default class Main extends Component {
         <Entity primitive="a-camera" look-controls>
           <Entity primitive="a-cursor" cursor={{fuse: false}} material={{color: 'white', shader: 'flat', opacity: 0.75}} geometry={{radiusInner: 0.005, radiusOuter: 0.007}} />
         </Entity>
-        <Entity primitive="a-sound" src={this.state.sfx} autoplay="true" loop="true"/>
+        <SoundPlayer sound={this.state.sfx} />
         <Entity
           primitive="a-sky"
           src={this.state.background}

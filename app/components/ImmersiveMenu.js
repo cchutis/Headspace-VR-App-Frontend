@@ -21,8 +21,7 @@ export default class ImmersiveMenu extends Component {
         height="4.5"
         position="0 2.5 -4"
         rotation="0 0 0"
-        panel-color="#000"
-      >
+        panel-color="#000">
         {this.renderEnvironments()}
         <a-gui-button
           width="2.5"
@@ -33,8 +32,7 @@ export default class ImmersiveMenu extends Component {
           font-family = "Muli"
           margin="0.05 0 0.05 0"
           background-color="#301171"
-          border-color="#000"
-        />
+          border-color="#000"/>
       </a-gui-flex-container>
     );
   }

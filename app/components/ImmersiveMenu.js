@@ -16,7 +16,7 @@ export default class ImmersiveMenu extends Component {
         justify-content="flexEnd"
         align-items="center"
         component-padding="0.1"
-        opacity="0.5"
+        opacity="0.0"
         width="3.5"
         height="4.5"
         position="0 2.5 -4"

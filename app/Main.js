@@ -58,7 +58,7 @@ export default class Main extends Component {
 
   immersiveClicked() {
     this.setState({
-      immersive: !this.state.immersive,
+      immersive: true,
       background: "img/sky.jpg"
     });
   }
@@ -71,11 +71,12 @@ export default class Main extends Component {
 
   backToList() {
     this.setState({
-      immersive: !this.state.immersive,
+      immersive: false,
       background: "img/sky.jpg",
       showSettings: false,
-      sfx: 'menumusic.mp3',
-      showMenu: true
+      sfx: '',
+      showMenu: true,
+      theater: false
     });
   }
 
@@ -97,7 +98,7 @@ export default class Main extends Component {
 
   enableTheater() {
     this.setState({
-      theater: !this.state.theater,
+      theater: true,
       showMenu: false
     })
   }
@@ -118,6 +119,10 @@ export default class Main extends Component {
             loop="false"
             src={this.state.movieChoice}
           />
+          <a-asset-item id="frame-obj" src="pictureframe/frame.obj" />
+          <a-asset-item id="frame-mtl" src="pictureframe/frame.mtl" />
+          <a-asset-item id="petframe-obj" src="petframe/frame.obj" />
+          <a-asset-item id="petframe-mtl" src="petframe/frame.mtl" />
         </a-assets>
         {this.state.immersive || this.state.theater ? null : (
           <Entity

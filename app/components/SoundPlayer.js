@@ -9,6 +9,7 @@ export default class SoundPlayer extends Component {
             src={this.props.sound}
             autoplay="true"
             loop="true"
+            volume={this.props.volume}
           />
         );
     }

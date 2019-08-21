@@ -10,7 +10,7 @@ export default class MenuContainer extends Component {
         return (
             this.props.immersive ?
             <ImmersiveMenu immersiveClicked={this.props.immersiveClicked} environments={this.props.environments} changeEnvironment={this.props.changeEnvironment} />
-            : <MainMenu immersiveClicked={this.props.immersiveClicked}/>
+            : <MainMenu immersiveClicked={this.props.immersiveClicked} enableTheater={this.props.enableTheater}/>
             
         );
     }

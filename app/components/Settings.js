@@ -15,13 +15,14 @@ export default class Settings extends Component {
             position="0 1 -4"
             rotation="0 0 0"
             panel-color="#000"
+            class="clickable"
           >
             <a-gui-button
               width="2.5"
               height="0.75"
-              onclick="NULL"
+              onclick={this.props.toggleMute}
               key-code="13"
-              value="Mute Music"
+              value={this.props.volume === 0 ? "Muted" : "Mute Sounds"}
               font-family="Muli"
               margin="0.05 0 0.05 0"
               background-color="#301171"
@@ -30,9 +31,9 @@ export default class Settings extends Component {
             <a-gui-button
               width="2.5"
               height="0.75"
-              onclick="buttonActionFunction"
+              onclick={this.props.backToList}
               key-code="16"
-              value="Exit"
+              value="Change Scene"
               font-family="Muli"
               margin="0 0 0.05 0"
               background-color="#301171"

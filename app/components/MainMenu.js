@@ -15,6 +15,7 @@ export default class MainMenu extends Component {
             position="0 1 -4"
             rotation="0 0 0"
             panel-color="#000"
+            class="clickable"
           >
             <a-gui-button
               width="2.5"
@@ -30,7 +31,7 @@ export default class MainMenu extends Component {
             <a-gui-button
               width="2.5"
               height="0.75"
-              onclick="buttonActionFunction"
+              onclick={this.props.enableTheater}
               key-code="16"
               value="Theater Mode"
               font-family="Muli"

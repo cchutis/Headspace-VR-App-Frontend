@@ -29,23 +29,23 @@ export default class Main extends Component {
   }
 
   fetchEnvironments(){
-    fetch('http://localhost:3000/environments')
-    .then(r => r.json())
-    .then(data => {
-      this.setState({
-        environments: data
-      })
-    })
+    fetch("http://localhost:3000/environments")
+      .then(r => r.json())
+      .then(data => {
+        this.setState({
+          environments: data
+        });
+      });
   }
 
   fetchMovies() {
-      fetch('http://localhost:3000/movies')
-      .then(r => r.json())
-      .then(movies => {
+      fetch("http://localhost:3000/movies")
+        .then(r => r.json())
+        .then(movies => {
           this.setState({
             movies: movies
-          })
-      })
+          });
+        });
   }
 
   changeEnvironment(image, sfx) {
@@ -58,7 +58,7 @@ export default class Main extends Component {
 
   immersiveClicked() {
     this.setState({
-      immersive: true,
+      immersive: !this.state.immersive,
       background: "img/sky.jpg"
     });
   }

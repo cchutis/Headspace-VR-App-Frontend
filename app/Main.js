@@ -29,7 +29,7 @@ export default class Main extends Component {
   }
 
   fetchEnvironments(){
-    fetch("http://localhost:3000/environments")
+    fetch("https://headspace-vr-app-api.herokuapp.com/environments")
       .then(r => r.json())
       .then(data => {
         this.setState({
@@ -39,7 +39,7 @@ export default class Main extends Component {
   }
 
   fetchMovies() {
-      fetch("http://localhost:3000/movies")
+    fetch("https://headspace-vr-app-api.herokuapp.com/movies")
         .then(r => r.json())
         .then(movies => {
           this.setState({

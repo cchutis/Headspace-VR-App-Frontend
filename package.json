@@ -3,9 +3,9 @@
   "description": "Headspace VR App",
   "private": false,
   "author": "Constantine Chutis",
-  "homepage": "http://www.constantinechutis.com",
+  "homepage": "https://github.com/cchutis/Headspace-VR-App-Frontend/app/assets/index.html",
   "version": "1.0.0",
-  "repository": "https://github.com/cchutis/Headspace-VR-App-Frontend",
+  "repository": "https://github.com/cchutis/Headspace-VR-App-Frontend/",
  "scripts": {
    "predeploy": "npm run build",
    "deploy": "gh-pages -d build"

@@ -5,6 +5,9 @@
   "author": "Constantine Chutis",
   "homepage": "http://www.constantinechutis.com",
   "version": "1.0.0",
+  "engine": {
+    "node": "12.12.0"
+  },
   "repository": "https://github.com/cchutis/Headspace-VR-App-Frontend",
   "scripts": {
     "start": "brunch watch --server",

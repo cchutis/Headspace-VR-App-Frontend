@@ -11,7 +11,7 @@
   },
   "repository": "https://github.com/cchutis/Headspace-VR-App-Frontend",
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "npm build --production",
     "deploy": "ghpages -d public"
   },
